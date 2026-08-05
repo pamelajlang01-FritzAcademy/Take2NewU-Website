@@ -1,22 +1,23 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 180" role="img" aria-labelledby="title desc">
   <title id="title">Take2NewU</title>
-  <desc id="desc">A refined champagne-gold clapper mark beside the Take2NewU wordmark.</desc>
+  <desc id="desc">Champagne-gold clapper mark with a refined charcoal Take2NewU wordmark.</desc>
   <defs>
     <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#a77a25"/>
-      <stop offset="0.48" stop-color="#e4c66f"/>
-      <stop offset="1" stop-color="#b48731"/>
+      <stop offset="0" stop-color="#a97920"/>
+      <stop offset="0.45" stop-color="#d8b45b"/>
+      <stop offset="0.72" stop-color="#f0d789"/>
+      <stop offset="1" stop-color="#ad7b25"/>
     </linearGradient>
   </defs>
   <g transform="translate(18 24)" fill="none" stroke="url(#gold)" stroke-linecap="round" stroke-linejoin="round">
-    <rect x="8" y="42" width="118" height="86" rx="13" stroke-width="3"/>
+    <rect x="8" y="42" width="118" height="86" rx="12" stroke-width="3.4"/>
     <path d="M10 42h114" stroke-width="3"/>
     <g transform="rotate(-8 16 42)">
-      <rect x="8" y="11" width="118" height="31" rx="7" stroke-width="3"/>
+      <rect x="8" y="11" width="118" height="31" rx="7" stroke-width="3.4"/>
       <path d="M31 12l-18 29M70 12L52 41M109 12L91 41" stroke-width="12"/>
     </g>
-    <path d="M28 84h22M84 84h22" stroke-width="2.5"/>
   </g>
-  <text x="85" y="112" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="55" fill="url(#gold)" stroke="none">2</text>
-  <text x="166" y="108" font-family="Arial, Helvetica, sans-serif" font-size="72" font-weight="500" letter-spacing="-4" fill="#f8f6f1">Take<tspan fill="url(#gold)">2</tspan>NewU</text>
+  <text x="85" y="113" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="56" fill="url(#gold)">2</text>
+  <text x="164" y="112" font-family="Georgia, 'Times New Roman', serif" font-size="73" letter-spacing="-4" fill="#2b241f">Take<tspan fill="url(#gold)">2</tspan>NewU</text>
+  <text x="168" y="148" font-family="Arial, Helvetica, sans-serif" font-size="15" letter-spacing="5.4" fill="#a97920">EVERY DAY IS A NEW TAKE.</text>
 </svg>
