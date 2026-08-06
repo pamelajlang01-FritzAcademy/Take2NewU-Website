@@ -1,0 +1,18 @@
+/* Approved product-scene imagery. The surrounding page remains live HTML/CSS. */
+.live-bottle-stage{
+  min-height:520px;
+  background:url('../images/hero-products-approved.png') center/cover no-repeat;
+  padding:0;
+}
+.live-bottle-stage>*{display:none!important}
+.category-visual{background-position:center!important;background-size:cover!important;background-repeat:no-repeat!important}
+.mini-bottle-scene{background-image:url('../images/wellness-category-approved.png')!important}
+.estivi-scene{background-image:url('../images/estivi-category-approved.png')!important}
+.chizel-scene{background-image:url('../images/chizel-category-approved.png')!important}
+.bellezza-scene{background-image:url('../images/bellezza-category-approved.png')!important}
+.category-visual>*{display:none!important}
+.bellezza-card .coming-soon-banner{display:block!important}
+@media(max-width:700px){
+  .live-bottle-stage{min-height:330px;background-size:cover;background-position:center}
+  .category-visual{height:205px}
+}
