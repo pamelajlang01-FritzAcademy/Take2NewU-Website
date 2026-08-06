@@ -1,3 +1,8 @@
+const productCardStyles = document.createElement('link');
+productCardStyles.rel = 'stylesheet';
+productCardStyles.href = 'assets/css/brand-product-card-fix.css';
+document.head.appendChild(productCardStyles);
+
 const menuButton = document.querySelector('[data-menu-toggle]');
 const menu = document.querySelector('[data-menu]');
 
