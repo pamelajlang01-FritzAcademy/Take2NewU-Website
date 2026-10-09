@@ -1,0 +1,51 @@
+<section class="t2-intro">
+  <div class="t2-hero">
+    <div class="t2-copy">
+      <p class="t2-eyebrow">{{ 't2_shop.hero.eyebrow' | t }}</p>
+      <h1>{{ 't2_shop.hero.title' | t }}</h1>
+      <p class="t2-lead">{{ 't2_shop.hero.description' | t }}</p>
+      <div class="t2-actions">
+        <a class="t2-button" href="{{ routes.all_products_collection_url }}">{{ 't2_shop.hero.shop' | t }}</a>
+        <a class="t2-button t2-button-outline" href="/pages/find-your-routine">{{ 't2_shop.hero.routine' | t }}</a>
+      </div>
+      <p class="t2-note">{{ 't2_shop.hero.note' | t }}</p>
+    </div>
+    <div class="t2-essentials">
+      {% assign featured_handles = 'youthful-glow-serum,microbiome-prebiotics-face-mist-1,chizel-tallow,bone-heart-support' | split: ',' %}
+      {% for product_handle in featured_handles %}
+        {% assign featured = all_products[product_handle] %}
+        {% if featured != blank %}
+          <a class="t2-essential" href="{{ featured.url }}">
+            {{ featured.featured_image | image_url: width: 500 | image_tag: widths: '250, 350, 500', sizes: '(min-width: 900px) 22vw, 44vw', loading: 'eager', alt: featured.title }}
+            <span class="t2-product-brand">{{ featured.vendor | escape }}</span>
+            <span class="t2-product-name">{{ featured.title | escape }}</span>
+            <span class="t2-product-price">{{ featured.price | money }}</span>
+          </a>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+  <div class="t2-brand-heading">
+    <p class="t2-eyebrow">{{ 't2_shop.brands.eyebrow' | t }}</p>
+    <h2>{{ 't2_shop.brands.title' | t }}</h2>
+  </div>
+  <div class="t2-brands">
+    {% assign brand_handles = 'bellezza-duratura,estivit,chizel-mens-care,take2newu-wellness' | split: ',' %}
+    {% assign brand_keys = 'bellezza,estivi,chizel,wellness' | split: ',' %}
+    {% for brand_handle in brand_handles %}
+      {% assign brand_collection = collections[brand_handle] %}
+      {% assign brand_key = brand_keys[forloop.index0] %}
+      {% assign title_key = 't2_shop.brands.' | append: brand_key | append: '_title' %}
+      {% assign description_key = 't2_shop.brands.' | append: brand_key | append: '_description' %}
+      <a href="{{ brand_collection.url }}" class="t2-brand t2-brand-{{ brand_key }}">
+        <span class="t2-brand-number">0{{ forloop.index }}</span>
+        <h3>{{ title_key | t }}</h3>
+        <p>{{ description_key | t }}</p>
+        <span class="t2-brand-link">{{ 't2_shop.brands.explore' | t }} <span aria-hidden="true">→</span></span>
+      </a>
+    {% endfor %}
+  </div>
+</section>
+{% schema %}
+{"name":"Take2NewU shopping intro","settings":[],"presets":[{"name":"Take2NewU shopping intro"}]}
+{% endschema %}

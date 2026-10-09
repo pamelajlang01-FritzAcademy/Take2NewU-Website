@@ -1,0 +1,20 @@
+<section class="t2-help">
+  <div class="t2-routine">
+    <div>
+      <p class="t2-eyebrow">{{ 't2_shop.help.eyebrow' | t }}</p>
+      <h2>{{ 't2_shop.help.title' | t }}</h2>
+      <p>{{ 't2_shop.help.description' | t }}</p>
+    </div>
+    <a class="t2-button" href="/pages/find-your-routine">{{ 't2_shop.hero.routine' | t }}</a>
+  </div>
+  <div class="t2-faq">
+    <h2>{{ 't2_shop.faq.title' | t }}</h2>
+    <details><summary>{{ 't2_shop.faq.choose_question' | t }}</summary><p>{{ 't2_shop.faq.choose_answer' | t }} <a href="/pages/find-your-routine">{{ 't2_shop.hero.routine' | t }}</a></p></details>
+    <details><summary>{{ 't2_shop.faq.shipping_question' | t }}</summary><p>{{ 't2_shop.faq.shipping_answer' | t }} <a href="/pages/shipping-policy">{{ 't2_shop.faq.shipping_link' | t }}</a></p></details>
+    <details><summary>{{ 't2_shop.faq.help_question' | t }}</summary><p>{{ 't2_shop.faq.help_answer' | t }} <a href="/pages/contact">{{ 't2_shop.faq.contact_link' | t }}</a></p></details>
+  </div>
+  <div class="t2-trust"><span>{{ 't2_shop.trust.checkout' | t }}</span><span>{{ 't2_shop.trust.shipping' | t }}</span><a href="/pages/refund-return-policy">{{ 't2_shop.trust.returns' | t }}</a></div>
+</section>
+{% schema %}
+{"name":"Take2NewU shopping help","settings":[],"presets":[{"name":"Take2NewU shopping help"}]}
+{% endschema %}
